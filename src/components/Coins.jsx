@@ -16,7 +16,7 @@ const Coins = (props) => {
           <p className='hide-mobile'>Volume</p>
           <p className='hide-mobile'>Mkt Cap</p>
           </div>
-
+      {/* Passing props to access the coins by ID */}
           {props.coins.map(coins => {
                     return (
                         <Link to={`/coin/${coins.id}`} element={<Coin />} key={coins.id}>
