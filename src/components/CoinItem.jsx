@@ -9,7 +9,7 @@ const CoinItem = (props) => {
         <img src={props.coins.image} alt="" />
         <p>{props.coins.symbol.toUpperCase()}</p>
       </div>
-      
+       <p>${props.coins.current_price.toLocalString()}</p>
     </div>
   );
 };
